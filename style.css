@@ -1,0 +1,216 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lumanosimo', cursive;
+}
+.container{
+    width: 100%;
+    height: 100vh; /* viewport height = 19.2px */
+    background-color: white;
+    position: relative;
+}
+.navbar{
+    display: flex; /* to display side by side */
+    justify-content: space-between; /* to have the image and list on either sides*/
+    margin-left: 100px;
+    align-items: center;
+    width: 85%;
+}
+.logo{
+    width: 130px;
+}
+.linkitems{
+    display: inline-block; /* to have lists in line */
+    margin: 10px 20px;
+}
+.links{
+    text-decoration: none;/* to remove the underline */
+    font-weight: bold;
+    color: black;
+}
+/* pseudo class */
+/* selector:pseudo{property:value; hover means to mention the text when the cursor is on the text by any colours or by size */
+.links:hover{
+    color: aqua;     
+}
+.title_all{
+    margin-top: 13%;
+    margin-left: 8%;
+}   
+.name{
+    font-size: 48px;
+    margin-bottom: 20px;
+} 
+#lastname{
+    color: orange;
+}
+.download{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 30px;
+}
+.images{
+    position: absolute;
+    width: 45%;
+    height: 80%;
+    bottom: 0px;
+    right: 30px;
+}
+.images img{
+    position: absolute; /* two images will merge in the same space */
+    height: 100%;
+    left: 50%;
+    bottom: 0px;
+    transform: translateX(-50%); /* to remove the scrolling in the screen */
+    transition: bottom 1s, left 1s; /* to move the images in different position */
+}
+.images:hover #shape{
+    bottom: 70px;
+}
+.images:hover #girl{
+    left: 40%;
+}
+#about{
+    margin: 17% 8% 0% 8%;
+}
+.heading{
+    text-align: center;
+}
+.heading h2{
+    font-size: 30px;
+}
+.heading span{
+    font-size: 20px;
+    color: blueviolet;
+}
+.about_content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr); /* fr is the new unit */
+    gap: 2rem; /* rem is a new unit =16px */
+    margin-top: 2rem;
+}
+.about_details{
+    font-size: 18px;
+    font-weight: 400;
+    text-align: justify; /* to properly align the paragraph on both sides */
+}
+.information{
+    margin-top: 2rem;
+}
+.info-box{
+    margin-bottom: 1rem;
+    /* display: flex;
+    align-items: center; */
+}
+.info-box span{
+    margin-left: 1rem;
+}
+html{
+    scroll-behavior: smooth;
+}
+#skills{
+    margin: 8% 8% 0% 8%;
+}
+.about_skills{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.skill-img img{
+    width: 85%; 
+    padding: 4rem;
+}
+.bar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0px;
+    margin-bottom: 1rem;
+    position: relative;
+}
+.base-bar{
+    width: 100%;
+    height: 0.5rem;
+    background-color: black;
+    border-radius: 5rem;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+.html-bar{
+    width: 95%;
+    background-color: orange;
+}
+.css-bar{
+    width: 88%;
+    background-color: orange;
+}
+.js-bar{
+    width: 89%;
+    background-color: orange;
+}
+.react-bar{
+    width: 85%;
+    background-color: orange;
+}
+.icon-set{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+}
+.icon, .up-arrow{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+   /*  border: 1px solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px;
+}
+.icon i{
+    font-size: 30px;
+    color: black;
+}
+.icon:hover{
+    background: rgb(131,58,180);
+background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,75,0.9501050420168067) 0%, rgba(245,252,69,1) 100%);
+}
+.icon:hover i{
+    color: white;
+    animation: shake 0.75s;
+}
+@keyframes shake{
+    10%{
+        transform: rotate(15deg);
+    }
+    20%{
+        transform: rotate(-15deg);
+    }
+    30%{
+        transform: rotate(15deg);
+    }
+    40%{
+        transform: rotate(-15deg);
+    }
+}
+footer{
+    margin: 3rem 0px;
+}
+.up-arrow{
+    float: right;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,75,0.9501050420168067) 0%, rgba(245,252,69,1) 100%);
+    
+}
+.up-arrow:hover i{
+    color: white;
+}
+
